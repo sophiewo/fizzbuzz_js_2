@@ -13,17 +13,19 @@ describe('FizzBuzz', function() {
     it('divisible by 3', function(){
       expect(fizzBuzz.isDivisibleByThree(3)).toBe(true);
     });
+
+    it('divisible by 5', function () {
+      expect(fizzBuzz.isDivisibleByFive(5)).toBe(true);
+    });
   });
 
   describe('knows when a number is not', function(){
     it('divisible by 3', function(){
       expect(fizzBuzz.isDivisibleByThree(5)).toBe(false);
     });
-  });
 
-  describe('knows number is', function(){
     it('divisible by 5', function(){
-      expect(fizzBuzz.isDivisibleByFive(5)).toBe(true);
+      expect(fizzBuzz.isDivisibleByFive(3)).toBe(false);
     });
   });
 });
